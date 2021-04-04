@@ -1,0 +1,8 @@
+#
+# Ignore LaTex working files
+#
+*.aux
+*.log
+*.synctex.gz
+*.toc
+
