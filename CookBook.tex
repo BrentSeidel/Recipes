@@ -14,6 +14,11 @@
 
 \usepackage{url}
 \usepackage{gensymb}
+
+\usepackage[pdf]{pstricks}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf}
+\DeclareGraphicsRule{.pdf}{pdf}{.pdf}{}
 %
 % Rules to allow import of graphics files in EPS format
 %
@@ -425,32 +430,54 @@ I decided to try grating the chocolate the first time I made a chocolate ganache
 
 \section{Braids}
 \label{tip:Braid}
-Braids can help things look fancier.  A braided loaf of bread looks much fancier than just a plain loaf.  Here are some braids to get you started.
+Braids can help things look fancier.  A braided loaf of bread looks much fancier than just a plain loaf.  As I was looking into various braids, I discovered that there is a branch of mathematics dedicated to braids called braid theory.  It seems to be related to knot theory.  I will try to restrain my digressions, but if you're interested, there is lots of material on the web for further research.
 
-For the purposes of explanation, assume that the strands are all laid out horizontally and numbered from the top to the bottom such that the top strand is number 1.  The notation ``1:-O2'' would mean to move the top strand over the second from the top strand.  ``1:U2'' would mean to move the top strand under the second strand (``O'' for over and ``U'' for under).  Moves can be more complicated as ``7:U6,O5'' would move strand 7 under strand 6 and then over strand 5.  Each move starts with the strands being numbered with 1 at the top.  Note that to be a valid, a move has to describe what happens which each strand affected during a move.  Thus ``4:O2'' is not a valid move because it doesn't say what strand 4 should do with strand 3.
+First, some notation.  For each strand $i$, two operators are defined.  The $\sigma^{-1}_i$ operation moves strand $i$ over strand $i+1$.  The $\sigma_i$ operation moves strand $i$ under strand $i+1$.  If you have $n$ strands, then the operators are not defined for $i=n$, since there is no strand $n+1$.
+
+To be a little more concrete, assume that there are three strands so, $n=3$, and that the strands are laid horizontally with strand 1 at the top.  To make a normal three strand braid, you first move strand 1 over strand 2.  Then you move strand 3 over strand 2.  And repeat these two steps until you are finished.  The first move is just $\sigma^{-1}_1$.  The second move has to be expressed as $\sigma_2$.  This moves strand 2 under strand 3, which is the same thing as moving strand 3 over strand 2.  For 3 strands, the notation $\sigma_3$ is meaningless since it would move strand 3 under strand 4 and there is no strand 4.  So the notation for a normal 3 strand braid is $\sigma^{-1}_1\sigma_2$, repeated until finished.
+
+For the purposes of explanation, assume that the strands are all laid out horizontally and numbered from the top to the bottom such that the top strand is number 1.  The notation ``1:O2'' would mean to move the top strand over the second from the top strand.  ``1:U2'' would mean to move the top strand under the second strand (``O'' for over and ``U'' for under).  Moves can be more complicated as ``7:U6,O5'' would move strand 7 under strand 6 and then over strand 5.  Each move starts with the strands being numbered with 1 at the top.  Note that to be a valid, a move has to describe what happens which each strand affected during a move.  Thus ``4:O2'' is not a valid move because it doesn't say what strand 4 should do with strand 3.
 
 \subsection{One Strand}
 This is the basic loaf.  Included only for completeness.  I suppose I could have also included zero strands, but that just takes nothing and produces nothing.
 
 \subsection{Two Strands}
+This is really a simple twist (see figure \ref{fig:2Strand}).
+
+\begin{figure}[h]
+  \center
+  \includegraphics{Figures/2-strands.pdf}
+  \caption{Two Strand Braid, Strand 1 Over Strand 2 ($\sigma^{-1}_1$)}
+  \label{fig:2Strand}
+\end{figure}
+
 \subsubsection{Procedure}
 \begin{itemize}
   \item Divide the dough into two equal lumps.
   \item Roll each lump into long strand.
   \item Lay the strands side-by-side and squeeze one end together.
-  \item Move the top strand over the lower strand (1:O2).
-  \item Repeat (1:O2) until the end of the strands is reached.
+  \item Move the top strand over the lower strand ($\sigma^{-1}_1$).
+  \item Repeat ($\sigma^{-1}_1$) until the end of the strands is reached.
   \item Squeeze the last end together.
 \end{itemize}
 
 \subsection{Three Strands}
+This is what most people think of when they think of a braid.  This is the typical three strand braid (see figure \ref{fig:3Strand}).
+
+\begin{figure}[h]
+  \center
+  \includegraphics{Figures/3-strands.pdf}
+  \caption{Three Strand Braid, ($\sigma^{-1}_1\sigma_2$) Repeated}
+  \label{fig:3Strand}
+\end{figure}
+
 \subsubsection{Procedure}
 \begin{itemize}
   \item Divide the dough into three equal lumps.
   \item Roll each lump into long strand.
   \item Lay the strands side-by-side and squeeze one end together.
-  \item Move the top strand over the middle strand (1:O2), then move the bottom strand over the middle strand (3:O2).
-  \item Repeat (alternating 1:O2 and 3:O2) until the end of the strands is reached.
+  \item Move the top strand over the middle strand ($\sigma^{-1}_1$), then move the bottom strand over the middle strand ($\sigma_2$).
+  \item Repeat ($\sigma^{-1}_1\sigma_2$) until the end of the strands is reached.
   \item Squeeze the last end together.
 \end{itemize}
 
@@ -461,8 +488,8 @@ There are probably multiple ways to do four or more strand braids.  I'm just lis
   \item Divide the dough into four equal lumps.
   \item Roll each lump into long strand.
   \item Lay the strands side-by-side and squeeze one end together.
-  \item Move the top strand over the adjacent strand, and under the next strand (1:O2,U3,O4).
-  \item Repeat (1:O2,U3,O4) until the end of the strands is reached.
+  \item Move the top strand over the adjacent strand, and under the next strand ($\sigma^{-1}_1\sigma_2\sigma^{-1}_3$).
+  \item Repeat ($\sigma^{-1}_1\sigma_2\sigma^{-1}_3$) until the end of the strands is reached.
   \item Squeeze the last end together.
 \end{itemize}
 
