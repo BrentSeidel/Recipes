@@ -17,6 +17,10 @@ I'd be interested in hearing the results if anyone tries these.
 ### Cakes and Related
 * Chocolate Cheesecake Bars (Needs a little work, but quite good)
 
+### Cookies
+* Oatmeal Chocolate Chip
+* Gingerbread
+
 ### Pastires
 * Choux Pastry
 * Eclairs
