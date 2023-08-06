@@ -9,10 +9,12 @@ I'd be interested in hearing the results if anyone tries these.
 * Basic Bread
 * Sun-dried Tomato Basil Bread (this is one of my favorites)
 * Herb Bread (still need to get the balance of herbs right)
+* Generic rolls
 
 ### Pies and Related
 * Easy Shepherd's Pie/Pot Pie
 * Easy Quiche
+* Frittatas
 
 ### Cakes and Related
 * Chocolate Cheesecake Bars (Needs a little work, but quite good)
@@ -21,10 +23,12 @@ I'd be interested in hearing the results if anyone tries these.
 * Oatmeal Chocolate Chip
 * Gingerbread
 
-### Pastires
+### Pastries
 * Choux Pastry
+* Shortcrust Pastry
 * Eclairs
 * Deep Fried Raspberry-Chocolate Wraps
+* Cannoli
 
 ### Extras
 * Coconut Cream Chocolate Mousse (good if you like coconut)
@@ -32,6 +36,8 @@ I'd be interested in hearing the results if anyone tries these.
 * Tofu Raspberry Mousse (needs work)
 * Chocolate Ganache (quite good)
 * Caramel and Spun Sugar
+* Manicotti filling
+* Cannoli filling
 
 ### Tips and Techniques
 * Chiffonade
