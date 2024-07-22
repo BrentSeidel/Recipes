@@ -1,20 +1,24 @@
 \documentclass[10pt, openany]{book}
-
+%
+%  Packages to use
+%
 \usepackage{fancyhdr}
-\usepackage{imakeidx}
-
-\usepackage{amsmath}
-\usepackage{amsfonts}
-
-\usepackage{geometry}
-\geometry{letterpaper}
-
 \usepackage{fancyvrb}
 \usepackage{fancybox}
-
+%
+\usepackage{lastpage}
+\usepackage{imakeidx}
+%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%
+\usepackage{geometry}
+\geometry{letterpaper}
+%
 \usepackage{url}
 \usepackage{gensymb}
-
+\usepackage{multicol}
+%
 \usepackage[pdf]{pstricks}
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf}
@@ -34,6 +38,24 @@
 %========================================================
 %%% BEGIN DOCUMENT
 \begin{document}
+%
+%  Header's and Footers
+%
+\fancypagestyle{plain}{
+  \fancyhead[L]{}%
+  \fancyhead[R]{}%
+  \fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0.4pt}%
+}
+\fancypagestyle{myfancy}{
+  \fancyhead[L]{Recipies}%
+  \fancyhead[R]{\leftmark}
+  \fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0.4pt}%
+}
+\pagestyle{myfancy}
 %
 % Produce the front matter
 %
@@ -147,7 +169,7 @@ This recipe makes one loaf of bread.
   \item Stir in basil, Parmesan cheese, sun dried tomatoes, garlic, and salt..
   \item Add the flour and mix it in.  While adding the flour, you'll probably want to shift from mixing with a spoon to using your hands.  The dough doesn't need to be a single lump before moving on.  The kneading process will help to merge everything together.
   \item Turn onto a floured surface; knead until smooth and elastic, about 5-10 minutes.
-  \item Place in an oiled bowl, turning once to oil top.  Note that the oil is really optional is the dough isn't too sticky.
+  \item Place in an oiled bowl, turning once to oil top.  Note that the oil is really optional as the dough isn't too sticky.
   \item Cover and let rise in a warm place until doubled, about 1-2 hour (possibly more if the water was not warm).
   \item Braid the dough per section \ref{tip:Braid}.  Note that the dough was greased while rising, so it doesn't need a floured surface to be worked.
   \item Cover a baking pan with parchment paper, a silicon baking mat, or grease.
@@ -783,7 +805,7 @@ a bit crunchy.
 \section{Lemon Curd}
 This is based on an easy recipe that I found online.  It doesn't require separating the eggs and everything is mixed and heated at once.  It is similar to things like Creme Patisserie (section \ref{extra:CremePat}).  Feel free to try other flavors besides lemon.  Note that if you want to make something like a lemon meringue pie, you may wish to find a lemon curd recipe that uses just the egg yolks, so that the whites can be used for the meringue.
 
-I've tried mixing some lime juice and lime zest in with the lemon juice and lemon zest with good results.  Except that my orange juicer is a little to big to do a good job of juicing limes.  Some time, I will try using orange juice and orange zest. I've also been reducing the amount of sugar as I like things tart.  It's a matter of taste, so experiment and find out what tastes good to you.
+I've tried mixing some lime juice and lime zest in with the lemon juice and lemon zest with good results.  Some time, I will try using orange juice and orange zest. I've also been reducing the amount of sugar as I like things tart.  It's a matter of taste, so experiment and find out what tastes good to you.  It can also be frozen and thawed for use later.
 
 \subsection{Ingredients}
 \begin{itemize}
@@ -798,9 +820,9 @@ I've tried mixing some lime juice and lime zest in with the lemon juice and lemo
 \begin{itemize}
   \item Cube the butter.
   \item Combine all ingredients in a saucepan.
-  \item Heat with medium heat until mixture starts to thicken and it gets to a boil (5-6 minutes, or so).  Whisk continually while heating to keep the eggs from curdling.
-  \item Once it starts to thicken, you can lower the heat a little while it comes to a boil.  I let it boil for a minute or two before removing from heat.
-  \item Remove from heat and transfer curd to a large bowl and cover the surface with plastic wrap.  This helps keep a ``skin'' from forming.  You may wish to strain the curd while transferring to removed the zest.  Or, you could leave it in and tell people that it shows that it's from fresh lemons, like leaving the pulp in.
+  \item Heat with medium heat until mixture starts to thicken and gets to a boil (10-15 minutes, or so).  Whisk continually while heating to keep the eggs from curdling.
+  \item Once it starts to thicken (you will know when it starts to thicken - the change is quite noticable), you can lower the heat a little while it comes to a boil.  I let it boil for a minute or two before removing from heat.
+  \item Remove from heat and transfer curd to a large bowl and cover the surface with plastic wrap.  This helps keep a ``skin'' from forming.  Or, I use the 28oz plastic peanut butter containers.  Once cleaned out, they are the right size for a batch.  You may wish to strain the curd while transferring to removed the zest.  Or, you could leave it in and tell people that it shows that it's from fresh lemons, like leaving the pulp in.
   \item Let cool to room temperature.
   \item Refrigerate until cool.  The curd will thicken as it cools.
 \end{itemize}
